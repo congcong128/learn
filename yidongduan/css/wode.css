@@ -1,0 +1,4 @@
+input{width: 99%;height: .5rem;margin-top: .1rem;}
+#btn,#reg-btn{width: 100%; height: .6rem;font-size: .2rem;line-height: .6rem;background: deepskyblue;color: #fff;}
+
+footer figure:nth-of-type(3){color: #0dc441;}

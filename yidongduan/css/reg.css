@@ -1,0 +1,6 @@
+.ipt{width: 100%;height: 1rem;margin-top: 0.1rem;position: relative;}
+.reg-form span{display: inline-block;width: 1.2rem;height: 1rem;text-align: center;line-height: 1rem;vertical-align: middle;}
+#username_r,#password_r,#email_r{width: 4rem;height: 0.6rem;}
+#reg-btn{width: 100%;height: .6rem;font-size: .2rem;line-height: .6rem;background: deepskyblue;color: #fff;}
+
+#waite{width: 80%;height: 30%; position: absolute;top: 30%;left: 10%;background: #008000;z-index: 10;color: #fff;text-align: center;line-height: 1.2rem;display: none;font-size: .4rem;}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<script>
+			window.onload = function(){getRem(640,100)};
+        	window.onresize = function(){getRem(640,100)};
+        	function getRem(pwidth,prem){
+          	var html = document.getElementsByTagName("html")[0];
+        	var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        	html.style.fontSize = oWidth/pwidth*prem + "px";
+			}
+    	</script>
+    	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<ul id="menu-c">
+			<li><h2 id="user">请登录</h2></li>
+			<li>个人中心</li>
+			<li>历史记录</li>
+			<li>客服中心</li>
+			<li id="outline">退出登录</li>
+		</ul>
+		<header>
+			<span class="iconfont icon-caidan" id="menu"></span>
+			<a href="#">首页</a>
+		</header>
+		
+		<section>
+			<div id="scrollBanner" class="main-btop">
+				<ul id="imgList">
+					<li><img src="img/scroll-pic1.jpg"></li>
+					<li><img src="img/scroll-pic2.jpg"></li>
+					<li><img src="img/scroll-pic3.jpg"></li>
+					<li><img src="img/scroll-pic4.jpg"></li>
+					<li><img src="img/scroll-pic5.jpg"></li>
+					<li><img src="img/scroll-pic1.jpg"></li>
+				</ul>
+				<ul id="nums">
+					<li class="hover"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+			</div>
+			
+			<div id="list"></div>
+
+		</section>
+		<footer>
+			<figure id="toIndex">
+				<span class="iconfont icon-shouye"></span>
+				<figcaption>首页</figcaption>
+			</figure>
+			<figure id="toCart">
+				<span class="iconfont icon-gouwuche"></span>
+				<figcaption>购物车</figcaption>
+			</figure>
+			
+			<figure id="toWode">
+				<span class="iconfont icon-wode"></span>
+				<figcaption>我的</figcaption>
+			</figure>			
+		</footer>
+		<script src="js/scrollBanner.js"></script>
+	</body>
+</html>

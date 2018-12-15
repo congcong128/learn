@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wode.css"/>
+		
+		<script>
+			window.onload = function(){getRem(640,100)};
+        	window.onresize = function(){getRem(640,100)};
+        	function getRem(pwidth,prem){
+          	var html = document.getElementsByTagName("html")[0];
+        	var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        	html.style.fontSize = oWidth/pwidth*prem + "px";
+			}
+    	</script>
+    	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/wode.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<ul id="menu-c">
+			<li><h2 id="user">请登录</h2></li>
+			<li>个人中心</li>
+			<li>历史记录</li>
+			<li>客服中心</li>
+			<li>退出登录</li>
+		</ul>
+		<header>
+			<span class="iconfont icon-caidan" id="menu"></span>
+			<a href="#">我的</a>
+		</header>
+		<section>
+			<input type="text" name="username" id="username_1" value="" placeholder="username"/>
+			<input type="password" name="password" id="password_1" value="" placeholder="password"/>
+			<input type="button" name="btn" id="btn" value="登录" />
+			<input type="button" name="btn" id="reg-btn" value="注册" />
+		</section>
+		<footer>
+			<figure id="toIndex">
+				<span class="iconfont icon-shouye"></span>
+				<figcaption>首页</figcaption>
+			</figure>
+			<figure id="toCart">
+				<span class="iconfont icon-gouwuche"></span>
+				<figcaption>购物车</figcaption>
+			</figure>
+			
+			<figure id="toWode">
+				<span class="iconfont icon-wode"></span>
+				<figcaption>我的</figcaption>
+			</figure>			
+		</footer>
+	</body>
+</html>
